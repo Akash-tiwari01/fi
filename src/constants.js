@@ -1,1 +1,1 @@
-export const databaseName = "vdatabase";
+export const DB_Name = "vdatabase";
