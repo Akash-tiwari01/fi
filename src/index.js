@@ -7,7 +7,7 @@ const app = express();
 
 ;( async ()=>{
     try {
-        const connect = await mongoose.connect(`${process.env.mongodb_URL}/${databaseName}?retryWrites=true&w=majority`);
+        const connect = await mongoose.connect(`${process.env.mongodb_URL}/${databaseName}`);
         app.on("error",(error)=>{
         console.log(`Error: ${error}`);
         throw(error);
